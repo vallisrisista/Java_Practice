@@ -2,9 +2,11 @@ import java.util.*;
 
 class CollectionDemo {
        public static void main(String[] args) {
-            Collection nums=new ArrayList<>();
+            //Adding  Data type removes the warning of unchecked exceptions.
+            Collection<Integer> nums=new ArrayList<>();
             nums.add(2);
-            nums.add("d");
+            //As we dclared the nums array list to be an integer type, we cant have a character
+            //nums.add("d");
             System.out.println(nums);
             
     }
